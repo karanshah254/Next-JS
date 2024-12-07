@@ -1,11 +1,15 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: {
+        absolute: "Blog",
+    }
+}
+
 export default function Blog() {
     return (
-        <html>
-            <body>
-                <h1>
-                    Welcome to the blog page!
-                </h1>
-            </body>
-        </html>
+        <h1>
+            Welcome to the blog page!
+        </h1>
     )
 }

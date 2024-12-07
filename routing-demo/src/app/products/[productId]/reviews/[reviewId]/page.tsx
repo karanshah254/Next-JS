@@ -7,12 +7,8 @@ export default function ReviewProduct({ params }: {
         notFound()
     }
     return (
-        <html>
-            <body>
-                <h2>
-                    Review {params.reviewId} for product {params.productId}
-                </h2>
-            </body>
-        </html>
+        <h2>
+            Review {params.reviewId} for product {params.productId}
+        </h2>
     )
 }

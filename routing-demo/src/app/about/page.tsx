@@ -1,11 +1,13 @@
+// routing static metadata for the about page
+
+export const metadata = {
+    title: 'About developer',
+}
+
 export default function About() {
     return (
-        <html>
-            <body>
-                <h1>
-                    Welcome to the about page!
-                </h1>
-            </body>
-        </html>
+        <h1>
+            Welcome to the about page!
+        </h1>
     )
 }
