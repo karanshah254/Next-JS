@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import './styles.css';
+import { useState } from "react";
 
 const navLinks = [
     {
@@ -18,9 +19,15 @@ const navLinks = [
 export default function AuthLayout({ children }: {
     children: React.ReactNode
 }) {
+    const [input, setInput] = useState('');
     const pathname = usePathname();
     return (
         <div>
+            <div>
+                {/* We can use template instead of layout here and our state is not preserved when we navigate to other page because we are using template here.
+                Rename layout.tsx file with template.tsx and then fill this input box and after that navigate to other page you will see that input box is empty. */}
+                <input type="text" value={input} onChange={e => setInput(e.target.value)} />
+            </div>
             {navLinks.map((link) => {
                 const isActive = pathname.startsWith(link.href);
                 return (
