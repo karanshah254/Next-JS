@@ -19,3 +19,23 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+react-slick styling start
+.image-slider-container {
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* react-slick styling start */
+.image-slider-container {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.image-slider-container .slick-prev:before,
+.image-slider-container .slick-next:before {
+  color: white;
+  margin-left: -59px;
+}
+/* react-slick styling end */
